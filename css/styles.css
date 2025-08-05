@@ -167,6 +167,7 @@ div.lbox svg {
   .lbox > * {
     flex: 0 0 25%;
     text-align: center;
+    gap: 0.2rem;
   }
 
   div.lbox svg {
@@ -175,12 +176,14 @@ div.lbox svg {
 
   .lbox div {
     flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 0.5rem;
   }
 
   .lbox div a {
-    padding: 0.2rem 0.5rem;
+    padding: 0;
+    margin: 0.2rem 0.5rem;
     border: 0;
     font-size: 1.5rem;
-    margin: 0;
   }
 }
