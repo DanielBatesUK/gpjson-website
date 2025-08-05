@@ -1,0 +1,189 @@
+*,
+*::after,
+*::before {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 100svw;
+  min-height: 100svh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  align-items: center;
+  justify-content: center;
+  line-height: 1em;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  color: #e0e0e0;
+}
+
+svg,
+img {
+  vertical-align: top;
+}
+
+.logo {
+  flex-grow: 1;
+  max-width: 75vw;
+}
+.logo .round_background {
+  color: #ede7e3;
+}
+.logo .braces {
+  color: #ffa62b;
+}
+.logo .flag_border {
+  color: rgba(64, 64, 64, 0.5);
+}
+.logo .flag_check_light {
+  color: #ffffff;
+}
+.logo .flag_check_dark {
+  color: #000000;
+}
+.logo .gpjsonio {
+  color: #a0a0a0;
+}
+
+.team_color_1 {
+  color: #f47600 !important;
+} /* McLaren */
+.team_color_2 {
+  color: #ed1131 !important;
+} /* Ferrari */
+.team_color_3 {
+  color: #4781d7 !important;
+} /* Red Bull */
+.team_color_4 {
+  color: #00d7b6 !important;
+} /* Mercedes */
+.team_color_5 {
+  color: #229971 !important;
+} /* Aston Martin */
+.team_color_6 {
+  color: #00a1e8 !important;
+} /* Alpine */
+.team_color_7 {
+  color: #9c9fa2 !important;
+} /* Hass */
+.team_color_8 {
+  color: #6c98ff !important;
+} /* Racing Bulls */
+.team_color_9 {
+  color: #1868db !important;
+} /* Williams */
+.team_color_10 {
+  color: #01c00e !important;
+} /* Sauber */
+
+.coming_soon {
+  margin-bottom: 3rem;
+  color: #a0a0a0;
+}
+
+.unofficial {
+  max-width: 75%;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #a0a0a0;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.lbox {
+  max-width: 75%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.lbox a {
+  transition: color 300ms ease-in-out, translate 200ms ease-in-out;
+  color: #c0c0c0;
+  text-decoration: none;
+}
+
+.lbox a:hover {
+  color: #808080;
+  translate: 0 -0.1rem;
+}
+
+div.lbox svg {
+  height: 2.5rem;
+  aspect-ratio: 1;
+}
+
+.lbox div {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #c0c0c0;
+  border-radius: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+.lbox div a {
+  padding: 0 0.5rem;
+  border-left: 1px #c0c0c0 solid;
+  white-space: collapse;
+  font-size: 1.25rem;
+}
+
+.lbox div a:nth-child(1) {
+  border-left: 0;
+}
+
+@media screen and (max-width: 608px) {
+  .logo {
+    max-width: 90vw;
+  }
+  .coming_soon {
+    font-size: 2rem;
+  }
+
+  .lbox {
+    min-width: 100svw;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .lbox > * {
+    flex: 0 0 25%;
+    text-align: center;
+    gap: 0.2rem;
+  }
+
+  div.lbox svg {
+    height: 3rem;
+  }
+
+  .lbox div {
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .lbox div a {
+    padding: 0;
+    margin: 0.2rem 0.5rem;
+    border: 0;
+    font-size: 1.5rem;
+  }
+}
